@@ -35,6 +35,10 @@ corpus <- VCorpus(
   )
 )
 
+#usunięcie z tekstów podziału na akapity
+pasteParagraphs <- content_transformer(function(text, char) paste(text, collapse = char))
+corpus <- tm_map(corpus, " ")
+
 #wstępne przetwarzanie
 corpus <- tm_map(corpus, removeNumbers)
 corpus <- tm_map(corpus, removePunctuation)

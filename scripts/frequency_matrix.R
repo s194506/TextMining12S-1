@@ -8,7 +8,6 @@ setwd(workDir)
 #definicja katalogów projektu
 inputDir <- ".\\data"
 outputDir <- ".\\results"
-scriptsDir <- ".\\scripts"
 workspaceDir <- ".\\workspaces"
 
 #utworzenie katalogu wyjściowego
@@ -90,7 +89,7 @@ tdmTfidfAllMatrix <- as.matrix(tdmTfidfAll)
 tdmBinAllMatrix <- as.matrix(tdmBinAll)
 tdmTfBoundsMatrix <- as.matrix(tdmTfBounds)
 tdmTfidfBoundsMatrix <- as.matrix(tdmTfidfBounds)
-dtmTfidfBoundsMAtrix <- as.matrix(dtmTfidfBounds)
+dtmTfidfBoundsMatrix <- as.matrix(dtmTfidfBounds)
 
 #eksport macirzy do pliku .csv
 #matrixFile <- paste(
