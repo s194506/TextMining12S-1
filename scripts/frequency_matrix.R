@@ -100,4 +100,5 @@ dtmTfidfBoundsMatrix <- as.matrix(dtmTfidfBounds)
 #)
 #write.table(tdmTfidfBoundsMatrix, file = matrixFile, sep = ";", dec = ",", col.names = NA)
 
-
+#wzorzec grupowania dokumentów 
+pattern <- c(1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3)
